@@ -4,3 +4,12 @@
 # *Пример:*
 # 385916 -> yes
 # 123456 -> no
+
+tickets_num = input('Введите номер билета из 6 цифр: ')
+first_part = int(tickets_num[0]) + int(tickets_num[1]) + int(tickets_num[2])
+second_part = int(tickets_num[3]) + int(tickets_num[4]) + int(tickets_num[5])
+
+if first_part == second_part:
+    print ('Ура! Это счастливый билет!')
+else:
+    print('Это Не счастливый билет')
